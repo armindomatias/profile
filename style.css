@@ -1,0 +1,117 @@
+/* everything */
+
+body {
+  background-color: rgb(43, 11, 43);
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profile-header, .my-description, .social-links {
+  background-color: antiquewhite;
+  margin: 20px 350px;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+@media (max-width: 960px) {
+  .profile-header, .my-description, .social-links {
+    margin: 20px 35px;
+    padding: 30px;
+  }
+}
+
+/* Profile Header */
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic-armindo {
+  width: 300px;
+  border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+  .profile-pic-armindo {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+/* Description */
+
+.my-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-description p {
+  text-align: center;
+  margin: 20px 30px;
+}
+
+.btn-description {
+  text-decoration: none;
+  background-color: rgb(117, 117, 218);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn-description:hover {
+  background-color: rgb(79, 79, 138);
+  transition: 0.3s all;
+}
+
+@media (max-width: 960px) {
+  .title-my-desc {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .my-description p {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+}
+
+/* Social Links part */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.list-of-links {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 0;
+}
+
+.list-of-links li {
+  list-style-type: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.list-of-links li:first-of-type {
+  margin-left: 0px;
+}
+
+.list-of-links a {
+  list-style-type: none;
+  color: purple;
+  font-size: 25px;
+}
